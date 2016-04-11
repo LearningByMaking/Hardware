@@ -319,9 +319,9 @@
 <wire x1="-1.5" y1="-2" x2="-1.5" y2="1.6" width="0.01" layer="20"/>
 </package>
 <package name="TMP_EXT">
-<pad name="VCC" x="-2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
-<pad name="DAT" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
-<pad name="GND" x="2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="P$1" x="-2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="P$2" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="P$3" x="2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
@@ -929,9 +929,9 @@ http://www.ti.com/product/lm2698</description>
 <devices>
 <device name="" package="TMP_EXT">
 <connects>
-<connect gate="G$1" pin="DAT" pad="DAT"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VCC"/>
+<connect gate="G$1" pin="DAT" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VIN" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -984,12 +984,6 @@ http://www.ti.com/product/lm2698</description>
 </gates>
 <devices>
 <device name="" package="9DOF">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$1"/>
-<connect gate="G$1" pin="SCL" pad="P$2"/>
-<connect gate="G$1" pin="SDA" pad="P$3"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>

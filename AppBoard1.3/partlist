@@ -1,0 +1,29 @@
+
+Part           Value                 Package            Library                        Position (mil)        Orientation
+
+16_MHZ_CRYSTAL HUNTERCRYSTAL         CRYSTAL-SMD-5X3    SparkFun-FreqCtrl              (510 1430)            MR90
+BOOT           SM06B-SRSS-TB         SM06B-SRSS-TB      con-jst2                       (300 115)             R0
+C1             22pF                  C0805              rcl                            (655 1490)            MR90
+C2             22pF                  C0805              rcl                            (365 1390)            MR90
+C3             0.1uF                 C0805              rcl                            (790 1185)            R0
+C4             10uF                  C0805              rcl                            (790 1265)            R0
+C5             0.1uF                 C0805              rcl                            (790 1345)            R0
+C6             0.1uF                 C0805              rcl                            (465 1845)            R90
+DAC1           MCP4921-E/MS          SOP65P490X110-8N   Microchip_By_element14_Batch_1 (705 1800)            R0
+DAC2           MCP4921-E/MS          SOP65P490X110-8N   Microchip_By_element14_Batch_1 (705 1635)            R0
+FUSE           HUNTERFUSE            CAPC4532X254N      AVX_By_element14_Batch_1       (280 1575)            R0
+JP1                                  JP1                jumper                         (235 670)             R270
+MCU            F24[X/10]---PM64      PM/PAG64           TI_MSP430_v16                  (530 925)             R270
+PARALLEL       SM08B-SRSS-TB         SM08B-SRSS-TB      con-jst2                       (650 115)             MR0
+R1             10k                   R0603              rcl                            (820 375)             R90
+R2             10k                   R0603              rcl                            (280 1685)            R0
+R3             10k                   R0603              rcl                            (845 895)             R90
+R4             330                   R0603              rcl                            (405 560)             MR90
+R5             330                   R0603              rcl                            (340 550)             MR90
+R6             330                   R0603              rcl                            (275 540)             MR90
+RADIO          SM04B-SRSS-TB         SM04B-SRSS-TB      con-jst2                       (270 115)             MR0
+RESET1         SWITCH-MOMENTARY-2SMD TACTILE-SWITCH-SMD SparkFun-Electromechanical     (280 1800)            MR180
+S1             AYZ0202               AYZ0202            SparkFun-Electromechanical     (655 150)             R0
+TANTALUM       10µF                  CAPCP3528X120N     AVX_By_element14_Batch_1       (775 1465)            R0
+TANTALUM1      10µF                  CAPCP3528X120N     AVX_By_element14_Batch_1       (335 1830)            R90
+U$5            LED-TRICOLOR          LED-TRICOLOR-SMD   SparkFun-LED                   (424 350)             MR0
