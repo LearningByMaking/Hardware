@@ -13362,6 +13362,22 @@ distributor RS 112-3794</description>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
 </package>
+<package name="OPENLOG">
+<pad name="P$1" x="0" y="3.81" drill="0.8" shape="square"/>
+<pad name="P$2" x="0" y="1.27" drill="0.8" shape="square"/>
+<pad name="P$3" x="0" y="-1.27" drill="0.8" shape="square"/>
+<pad name="P$4" x="0" y="-3.81" drill="0.8" shape="square"/>
+<pad name="P$5" x="0" y="6.35" drill="0.8" shape="square"/>
+<pad name="P$6" x="0" y="-6.35" drill="0.8" shape="square"/>
+<pad name="P$7" x="-8.89" y="3.81" drill="0.8" shape="square"/>
+<pad name="P$8" x="-8.89" y="1.27" drill="0.8" shape="square"/>
+<pad name="P$9" x="-8.89" y="-1.27" drill="0.8" shape="square"/>
+<pad name="P$10" x="-8.89" y="-3.81" drill="0.8" shape="square"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="-7.62" width="0.127" layer="20"/>
+<wire x1="1.27" y1="-7.62" x2="-10.16" y2="-7.62" width="0.127" layer="20"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.127" layer="20"/>
+<wire x1="-10.16" y1="7.62" x2="1.27" y2="7.62" width="0.127" layer="20"/>
+</package>
 </packages>
 <symbols>
 <symbol name="9DOF">
@@ -13382,6 +13398,18 @@ distributor RS 112-3794</description>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="OPENLOG">
+<pin name="BLK" x="-7.62" y="20.32" length="short" rot="R180"/>
+<pin name="GND" x="-7.62" y="17.78" length="short" rot="R180"/>
+<pin name="VCC" x="-7.62" y="15.24" length="short" rot="R180"/>
+<pin name="TX" x="-7.62" y="12.7" length="short" rot="R180"/>
+<pin name="RX" x="-7.62" y="10.16" length="short" rot="R180"/>
+<pin name="GRN" x="-7.62" y="7.62" length="short" rot="R180"/>
+<wire x1="-27.94" y1="5.08" x2="-27.94" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-27.94" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13413,6 +13441,26 @@ distributor RS 112-3794</description>
 <connect gate="G$1" pin="DAT" pad="DAT"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VIN" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPENLOG">
+<gates>
+<gate name="G$1" symbol="OPENLOG" x="20.32" y="-15.24"/>
+</gates>
+<devices>
+<device name="" package="OPENLOG">
+<connects>
+<connect gate="G$1" pin="BLK" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="GRN" pad="P$3"/>
+<connect gate="G$1" pin="RX" pad="P$4"/>
+<connect gate="G$1" pin="TX" pad="P$5"/>
+<connect gate="G$1" pin="VCC" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13596,10 +13644,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$4" library="LearningByMaking" deviceset="TMP_EXT" device=""/>
 <part name="GPS" library="con-jst2" deviceset="SM06B-SSR-H-TB" device=""/>
-<part name="PAD1" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD2" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD3" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD4" library="wirepad" deviceset="1,6/0,9" device=""/>
+<part name="PAD1" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
+<part name="PAD2" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
+<part name="PAD3" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
+<part name="PAD4" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
+<part name="U$6" library="LearningByMaking" deviceset="OPENLOG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13673,6 +13722,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="PAD2" gate="1" x="45.72" y="147.32"/>
 <instance part="PAD3" gate="1" x="45.72" y="152.4"/>
 <instance part="PAD4" gate="1" x="45.72" y="157.48"/>
+<instance part="U$6" gate="G$1" x="68.58" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -13826,6 +13876,33 @@ http://www.jst-mfg.com&lt;p&gt;
 <junction x="157.48" y="104.14"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<wire x1="27.94" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="33.02" y="101.6" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+</segment>
+<segment>
+<wire x1="48.26" y1="73.66" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="VCC"/>
+<wire x1="48.26" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<label x="48.26" y="73.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<wire x1="88.9" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="60.96" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<junction x="93.98" y="58.42"/>
+<label x="88.9" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="GPS" gate="-2" pin="S"/>
+<pinref part="GPS" gate="-5" pin="S"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VIN"/>
+<wire x1="7.62" y1="170.18" x2="12.7" y2="170.18" width="0.1524" layer="91"/>
+<label x="7.62" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="1WIRE" class="0">
 <segment>
@@ -13910,33 +13987,6 @@ http://www.jst-mfg.com&lt;p&gt;
 <junction x="205.74" y="142.24"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="VIN"/>
-<wire x1="7.62" y1="170.18" x2="12.7" y2="170.18" width="0.1524" layer="91"/>
-<label x="7.62" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="33.02" y="101.6" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<wire x1="48.26" y1="73.66" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="VCC"/>
-<wire x1="48.26" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<label x="48.26" y="73.66" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<wire x1="88.9" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="58.42" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="60.96" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<junction x="93.98" y="58.42"/>
-<label x="88.9" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="GPS" gate="-2" pin="S"/>
-<pinref part="GPS" gate="-5" pin="S"/>
-</segment>
 </net>
 <net name="VREAD" class="0">
 <segment>
@@ -13946,6 +13996,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="162.56" y="88.9" size="1.778" layer="95" xref="yes"/>
 <junction x="160.02" y="88.9"/>
+</segment>
+<segment>
+<wire x1="127" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
+<label x="127" y="165.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="ADC7"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14133,6 +14188,19 @@ http://www.jst-mfg.com&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,152.4,99.06,IC1,V+,+3V3,,,"/>
+<approved hash="104,1,152.4,83.82,IC1,V-,GND,,,"/>
+<approved hash="202,1,129.54,162.56,U$1,ADC6,,,,"/>
+<approved hash="202,1,129.54,160.02,U$1,ADC5,,,,"/>
+<approved hash="202,1,129.54,157.48,U$1,ADC4,,,,"/>
+<approved hash="202,1,129.54,154.94,U$1,ADC3,,,,"/>
+<approved hash="202,1,129.54,152.4,U$1,ADC2,,,,"/>
+<approved hash="202,1,129.54,149.86,U$1,ADC1,,,,"/>
+<approved hash="104,1,157.48,170.18,U$1,VIN,+3V3,,,"/>
+<approved hash="104,1,220.98,137.16,FTDI,+3V3,VCC,,,"/>
+<approved hash="104,1,12.7,170.18,U$3,VIN,+3V3,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
