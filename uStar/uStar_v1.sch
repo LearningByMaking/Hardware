@@ -13415,6 +13415,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="DP1" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
 <part name="DP0" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
 <part name="DP2" library="wirepad" deviceset="1,6/0,9" device="" value=" "/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13436,13 +13437,13 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="IC1" gate="G$1" x="142.24" y="91.44"/>
-<instance part="U$1" gate="G$1" x="142.24" y="149.86"/>
+<instance part="U$1" gate="G$1" x="147.32" y="149.86"/>
 <instance part="R2" gate="G$1" x="124.46" y="91.44" rot="R90"/>
 <instance part="R3" gate="G$1" x="160.02" y="83.82" rot="R90"/>
 <instance part="GND@3" gate="GND" x="157.48" y="73.66"/>
 <instance part="C1" gate="G$1" x="157.48" y="101.6"/>
 <instance part="GND@2" gate="GND" x="157.48" y="93.98"/>
-<instance part="SUPPLY5" gate="GND" x="127" y="129.54"/>
+<instance part="SUPPLY5" gate="GND" x="132.08" y="129.54"/>
 <instance part="1WR" gate="A" x="210.82" y="106.68"/>
 <instance part="+3V4" gate="G$1" x="124.46" y="101.6"/>
 <instance part="C2" gate="G$1" x="203.2" y="167.64"/>
@@ -13490,12 +13491,13 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="GND8" gate="1" x="60.96" y="104.14" rot="R270"/>
 <instance part="EXT-VCC" gate="G$1" x="195.58" y="76.2"/>
 <instance part="EXT-GND" gate="G$1" x="195.58" y="66.04"/>
-<instance part="ADC3" gate="1" x="116.84" y="160.02"/>
-<instance part="ADC2" gate="1" x="116.84" y="154.94"/>
-<instance part="ADC1" gate="1" x="116.84" y="149.86"/>
-<instance part="DP1" gate="1" x="116.84" y="134.62"/>
-<instance part="DP0" gate="1" x="116.84" y="139.7"/>
-<instance part="DP2" gate="1" x="116.84" y="129.54"/>
+<instance part="ADC3" gate="1" x="121.92" y="160.02"/>
+<instance part="ADC2" gate="1" x="121.92" y="154.94"/>
+<instance part="ADC1" gate="1" x="121.92" y="149.86"/>
+<instance part="DP1" gate="1" x="121.92" y="134.62"/>
+<instance part="DP0" gate="1" x="121.92" y="139.7"/>
+<instance part="DP2" gate="1" x="121.92" y="129.54"/>
+<instance part="GND9" gate="1" x="170.18" y="175.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13523,7 +13525,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@2"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="127" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="1WR" gate="A" pin="1"/>
@@ -13614,6 +13616,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="66.04" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@1"/>
+<wire x1="170.18" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -13676,13 +13683,13 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
-<wire x1="157.48" y1="170.18" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
-<label x="165.1" y="170.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="170.18" x2="170.18" y2="170.18" width="0.1524" layer="91"/>
+<label x="170.18" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="REF_MSP"/>
-<wire x1="157.48" y1="162.56" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
-<label x="165.1" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="162.56" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
+<label x="170.18" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
@@ -13693,8 +13700,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <net name="1WIRE" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="1WIRE"/>
-<wire x1="157.48" y1="167.64" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
-<label x="165.1" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
+<label x="170.18" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="1WR" gate="A" pin="5"/>
@@ -13768,8 +13775,10 @@ http://www.jst-mfg.com&lt;p&gt;
 <junction x="160.02" y="88.9"/>
 </segment>
 <segment>
-<wire x1="127" y1="167.64" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
-<label x="127" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="129.54" y1="172.72" x2="132.08" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="172.72" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="170.18" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
+<label x="129.54" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="ADC7"/>
 </segment>
 </net>
@@ -13823,8 +13832,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <net name="MOSI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SPI_MOSI"/>
-<wire x1="157.48" y1="154.94" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
-<label x="165.1" y="154.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<label x="170.18" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SDI"/>
@@ -13840,8 +13849,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <net name="MISO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SPI_MISO"/>
-<wire x1="157.48" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
-<label x="165.1" y="152.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<label x="170.18" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SDO"/>
@@ -13857,8 +13866,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <net name="CLK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SPI_CLK"/>
-<wire x1="157.48" y1="149.86" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
-<label x="165.1" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="170.18" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SCLK"/>
@@ -13894,15 +13903,15 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="DP5"/>
-<wire x1="157.48" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
-<label x="165.1" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="157.48" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
+<label x="170.18" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_SHDN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DP7"/>
-<wire x1="157.48" y1="139.7" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
-<label x="165.1" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
+<label x="170.18" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
@@ -13918,8 +13927,8 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="UART_TX"/>
-<wire x1="157.48" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<label x="165.1" y="144.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
+<label x="170.18" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_RX" class="0">
@@ -13930,15 +13939,15 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="UART_RX"/>
-<wire x1="157.48" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
-<label x="165.1" y="142.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<label x="170.18" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TMP" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADC0"/>
-<wire x1="129.54" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
-<label x="124.46" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
+<label x="129.54" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
@@ -13954,8 +13963,8 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="I2C_SCL"/>
-<wire x1="157.48" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
-<label x="165.1" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
+<label x="170.18" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="9DOF_SDA" class="0">
@@ -13966,8 +13975,8 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="I2C_SDA"/>
-<wire x1="157.48" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
-<label x="165.1" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
+<label x="170.18" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_SELECT" class="0">
@@ -13978,20 +13987,8 @@ http://www.jst-mfg.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="DP6"/>
-<wire x1="157.48" y1="147.32" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
-<label x="165.1" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="EXT_GND" class="0">
-<segment>
-<wire x1="193.04" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
-<label x="190.5" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="EXT-GND" gate="G$1" pin="MOUNT"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND@1"/>
-<wire x1="165.1" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
-<label x="165.1" y="172.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<label x="170.18" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="EXT_VCC" class="0">
@@ -14029,8 +14026,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <net name="RAIL_SHDN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DP4"/>
-<wire x1="157.48" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
-<label x="165.1" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="162.56" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
+<label x="170.18" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="SHDN"/>
@@ -14042,47 +14039,61 @@ http://www.jst-mfg.com&lt;p&gt;
 <segment>
 <pinref part="ADC1" gate="1" pin="P"/>
 <pinref part="U$1" gate="G$1" pin="ADC1"/>
-<wire x1="119.38" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADC2"/>
 <pinref part="ADC2" gate="1" pin="P"/>
-<wire x1="129.54" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="152.4" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="152.4" x2="127" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="152.4" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADC3"/>
 <pinref part="ADC3" gate="1" pin="P"/>
-<wire x1="129.54" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="154.94" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="154.94" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="DP0" gate="1" pin="P"/>
 <pinref part="U$1" gate="G$1" pin="DP0"/>
-<wire x1="119.38" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="139.7" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="139.7" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="DP1" gate="1" pin="P"/>
 <pinref part="U$1" gate="G$1" pin="DP1"/>
-<wire x1="119.38" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="134.62" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="134.62" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="DP2" gate="1" pin="P"/>
 <pinref part="U$1" gate="G$1" pin="DP3"/>
-<wire x1="119.38" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="129.54" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="127" y1="129.54" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BATT_LEVEL" class="0">
+<segment>
+<wire x1="193.04" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+<label x="190.5" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="EXT-GND" gate="G$1" pin="MOUNT"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="ADC4"/>
+<wire x1="134.62" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="157.48" x2="132.08" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
+<label x="129.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
