@@ -319,9 +319,9 @@
 <wire x1="-1.5" y1="-2" x2="-1.5" y2="1.6" width="0.01" layer="20"/>
 </package>
 <package name="TMP_EXT">
-<pad name="P$1" x="-2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
-<pad name="P$2" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
-<pad name="P$3" x="2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="VCC" x="-2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="DAT" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<pad name="GND" x="2.54" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
@@ -359,6 +359,21 @@
 <wire x1="-1.27" y1="5.08" x2="33.02" y2="5.08" width="0.127" layer="21"/>
 <wire x1="33.02" y1="5.08" x2="33.02" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="33.02" y1="-5.08" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
+</package>
+<package name="BOB-00544">
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="21.59" y="0"/>
+<vertex x="21.59" y="-20.32"/>
+<vertex x="0" y="-20.32"/>
+</polygon>
+<pad name="P$1" x="20.32" y="-17.78" drill="0.8" shape="square"/>
+<pad name="P$2" x="20.32" y="-15.24" drill="0.8" shape="square"/>
+<pad name="P$3" x="20.32" y="-12.7" drill="0.8" shape="square"/>
+<pad name="P$4" x="20.32" y="-10.16" drill="0.8" shape="square"/>
+<pad name="P$5" x="20.32" y="-7.62" drill="0.8" shape="square"/>
+<pad name="P$6" x="20.32" y="-5.08" drill="0.8" shape="square"/>
+<pad name="P$7" x="20.32" y="-2.54" drill="0.8" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -929,9 +944,9 @@ http://www.ti.com/product/lm2698</description>
 <devices>
 <device name="" package="TMP_EXT">
 <connects>
-<connect gate="G$1" pin="DAT" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="VIN" pad="P$3"/>
+<connect gate="G$1" pin="DAT" pad="DAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -971,6 +986,24 @@ http://www.ti.com/product/lm2698</description>
 <connect gate="G$1" pin="SHDN" pad="P$2"/>
 <connect gate="G$1" pin="VIN" pad="P$3"/>
 <connect gate="G$1" pin="VOUT" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9DOF">
+<gates>
+<gate name="G$1" symbol="9DOF" x="35.56" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="9DOF">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="SCL" pad="P$2"/>
+<connect gate="G$1" pin="SDA" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
