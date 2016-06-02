@@ -1,0 +1,375 @@
+Netlist
+
+Exported from Board_4x8-prototype_20160506.brd at 5/9/16 7:18 AM
+
+EAGLE Version 7.4.0 Copyright (c) 1988-2015 CadSoft
+
+Net      Part     Pad
+
++3V3     C1       1
+         C2       1
+         C3       1
+         C4       +
+         IC1      4
+         IC1      5
+         PWR      1
+         PWR      2
+         PWR      3
+         PWR      4
+         PWR      5
+         PWR      6
+         PWR      7
+         PWR      8
+         PWR2     1
+         PWR2     2
+         PWR2     3
+         PWR2     4
+         R2       2
+         U$1      +3.3V
+
+1WIRE    1WR      5
+         1WR      6
+         D1       A
+         FTDI     RXD
+         H4       B3,3
+         H6       B3,3
+         R1       1
+         U$1      1-WIRE
+
+GND      1WR      1
+         1WR      2
+         C1       2
+         C2       2
+         C3       2
+         C4       -
+         FTDI     GND
+         GND      1
+         GND      2
+         GND      3
+         GND      4
+         GND1     1
+         GND1     2
+         GND1     3
+         GND1     4
+         GND1     5
+         GND1     6
+         GND1     7
+         GND1     8
+         GND2     1
+         GND2     2
+         GND2     3
+         GND2     4
+         GND2     5
+         GND2     6
+         GND2     7
+         GND2     8
+         H3       B3,3
+         H5       B3,3
+         IC1      2
+         R3       1
+         SV4      GND
+         U$1      GND
+         U$1      GND@2
+
+N$1      U$4      1A
+         U$4      1B
+         U$4      1C
+         U$4      1D
+         U$4      1E
+
+N$2      PW1      P1
+         PW1      W1
+
+N$3      D1       C
+         FTDI     TXD
+
+N$4      PW1      P2
+         PW1      W2
+
+N$5      U$4      4A
+         U$4      4B
+         U$4      4C
+         U$4      4D
+         U$4      4E
+
+N$6      U$4      2A
+         U$4      2B
+         U$4      2C
+         U$4      2D
+         U$4      2E
+
+N$7      U$4      3A
+         U$4      3B
+         U$4      3C
+         U$4      3D
+         U$4      3E
+
+N$8      U$5      1A
+         U$5      1B
+         U$5      1C
+         U$5      1D
+         U$5      1E
+
+N$9      U$5      4A
+         U$5      4B
+         U$5      4C
+         U$5      4D
+         U$5      4E
+
+N$10     U$5      2A
+         U$5      2B
+         U$5      2C
+         U$5      2D
+         U$5      2E
+
+N$11     U$5      3A
+         U$5      3B
+         U$5      3C
+         U$5      3D
+         U$5      3E
+
+N$12     PW2      P1
+         PW2      W1
+
+N$13     PW2      P2
+         PW2      W2
+
+N$14     PW2      P3
+         PW2      W3
+
+N$15     PW2      P4
+         PW2      W4
+
+N$16     PW2      P5
+         PW2      W5
+
+N$17     PW2      P7
+         PW2      W7
+
+N$18     PW2      P6
+         PW2      W6
+
+N$19     PW2      P8
+         PW2      W8
+
+N$20     PW2      P9
+         PW2      W9
+
+N$21     PW2      P10
+         PW2      W10
+
+N$22     SV3      1
+         U$1      REF_DAC
+
+N$23     SV3      2
+         U$1      REF_MSP
+
+N$24     SV3      3
+         U$1      P6
+
+N$25     SV3      4
+         U$1      P7
+
+N$26     SV3      5
+         U$1      P8
+
+N$27     SV3      6
+         U$1      P9
+
+N$28     SV3      7
+         U$1      P10
+
+N$29     SV3      9
+         U$1      P12
+
+N$30     SV3      10
+         U$1      P13
+
+N$31     SV3      11
+         U$1      P14
+
+N$32     SV3      12
+         U$1      P15
+
+N$33     SV3      13
+         U$1      P16
+
+N$34     SV4      17
+         U$1      P18
+
+N$35     SV4      16
+         U$1      P19
+
+N$36     SV4      15
+         U$1      P20
+
+N$37     SV4      12
+         U$1      P23
+
+N$38     SV4      11
+         U$1      P24
+
+N$39     SV4      10
+         U$1      P25
+
+N$40     SV4      8
+         U$1      P27
+
+N$41     SV4      7
+         U$1      P28
+
+N$42     PW1      P3
+         PW1      W3
+
+N$43     PW1      P4
+         PW1      W4
+
+N$44     PW1      P5
+         PW1      W5
+
+N$45     PW1      P6
+         PW1      W6
+
+N$46     PW1      P7
+         PW1      W7
+
+N$47     PW1      P8
+         PW1      W8
+
+R1       U$2      1A
+         U$2      1B
+         U$2      1C
+         U$2      1D
+         U$2      1E
+
+R2       U$2      2A
+         U$2      2B
+         U$2      2C
+         U$2      2D
+         U$2      2E
+
+R3       U$2      3A
+         U$2      3B
+         U$2      3C
+         U$2      3D
+         U$2      3E
+
+R4       U$2      4A
+         U$2      4B
+         U$2      4C
+         U$2      4D
+         U$2      4E
+
+R5       U$2      5A
+         U$2      5B
+         U$2      5C
+         U$2      5D
+         U$2      5E
+
+R6       U$2      6A
+         U$2      6B
+         U$2      6C
+         U$2      6D
+         U$2      6E
+
+R7       U$2      7A
+         U$2      7B
+         U$2      7C
+         U$2      7D
+         U$2      7E
+
+R8       U$2      8A
+         U$2      8B
+         U$2      8C
+         U$2      8D
+         U$2      8E
+
+R9       U$3      1A
+         U$3      1B
+         U$3      1C
+         U$3      1D
+         U$3      1E
+
+R10      U$3      2A
+         U$3      2B
+         U$3      2C
+         U$3      2D
+         U$3      2E
+
+R11      U$3      3A
+         U$3      3B
+         U$3      3C
+         U$3      3D
+         U$3      3E
+
+R12      U$3      4A
+         U$3      4B
+         U$3      4C
+         U$3      4D
+         U$3      4E
+
+R13      U$3      5A
+         U$3      5B
+         U$3      5C
+         U$3      5D
+         U$3      5E
+
+R14      U$3      6A
+         U$3      6B
+         U$3      6C
+         U$3      6D
+         U$3      6E
+
+R15      U$3      7A
+         U$3      7B
+         U$3      7C
+         U$3      7D
+         U$3      7E
+
+R16      U$3      8A
+         U$3      8B
+         U$3      8C
+         U$3      8D
+         U$3      8E
+
+RESET    SV4      2
+         U$1      P33
+
+SHDN@1   SV4      3
+         U$1      P32
+
+SHDN@2   SV4      4
+         U$1      P31
+
+SHDN@3   SV3      14
+         U$1      P17
+
+TREAD@1  SV4      13
+         U$1      P22
+
+TREAD@2  SV4      9
+         U$1      P26
+
+VCC      1WR      3
+         1WR      4
+         FTDI     +3V3
+         H1       B3,3
+         H2       B3,3
+         IC1      3
+         R1       2
+         R2       1
+
+VCC@1    SV4      6
+         U$1      P29
+
+VCC@2    SV3      8
+         U$1      P11
+
+VCC@3    SV4      5
+         U$1      P30
+
+VREAD    IC1      1
+         R3       2
+         SV4      14
+         U$1      P21
+

@@ -1,0 +1,10 @@
+Job Information:
+Layout Name: Protoboard
+Service: Plus
+Laminate: FR4 0.062"
+Size: 8.5 x 4 cm
+Drills Size: After hole-plating
+Finish: Tin/Lead
+Copper: 1 Oz
+Solder Masks: Top, Bottom
+Qty: 10

@@ -1,0 +1,41 @@
+Partlist
+
+Exported from Board_4x8-prototype_20160506.brd at 5/9/16 7:18 AM
+
+EAGLE Version 7.4.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value               Package          Library           Position (inch)       Orientation
+
+1WR      N/A                 2X03             pinhead           (2.9 0.15)            R180
+C1       0.1uF               C0603            resistor          (3.19 0.54)           R0
+C2       0.1uF               C0603            resistor          (2.99 0.44)           R0
+C3       1uF                 C0603            resistor          (2.99 0.53)           R0
+C4       10uF                SMC_B            resistor          (2.95 0.65)           R0
+D1       1N4148DO35-7        DO35-7           diode             (2.273 0.218)         R0
+FTDI     FTDI-5PIN           1X05             FTDI              (2.3 0.096)           R0
+GND                          FE04-GND         prototyping_holes (1.52 0.79)           R90
+GND1                         FE08-GND         prototyping_holes (0.7 1.47)            R0
+GND2                         FE08-GND         prototyping_holes (0.7 0.11)            R0
+H1       MOUNT-PAD-ROUND3.3  3,3-PAD          holes             (3.2480315 0.0984252) R0
+H2       MOUNT-PAD-ROUND3.3  3,3-PAD          holes             (1.47637795 1.47637795) R0
+H3       MOUNT-PAD-SQUARE3.3 3,3-PAD-SQUARE   holes             (3.2480315 1.47637795) R0
+H4       MOUNT-PAD-ROUND3.3  3,3-PAD          holes             (1.87007874 1.47637795) R0
+H5       MOUNT-PAD-SQUARE3.3 3,3-PAD-SQUARE   holes             (0.0984252 1.47637795) R0
+H6       MOUNT-PAD-ROUND3.3  3,3-PAD          holes             (0.0984252 0.0984252) R0
+IC1      INA138              SOT23-5          burr-brown        (3.15 0.65)           R90
+PW1      PIN-WIRE-2X8        2X8              prototyping_holes (1.25 0.79)           R90
+PW2      PIN-WIRE-2X10       2X10             prototyping_holes (2.5780315 1.431)     R0
+PWR                          FE08             con-lsta          (0.7 0.79)            R0
+PWR2                         FE04-1           prototyping_holes (2.2 0.74)            R270
+R1       10k                 0204/5           resistor          (2.612 0.215)         R0
+R2       1                   R0603            resistor          (3.1 0.8)             R180
+R3       5k                  R0805            resistor          (3.1 0.9)             R0
+SV3                          FE14-1_ABBO      prototyping_holes (2.128 0.438)         R180
+SV4                          FE17-1_ABBO      prototyping_holes (2.22779995 1.138)    R0
+U$1      App-Board 1.2/1.3   APPCORE_RECEIVER LearningByMaking2 (2.36220472 0.78740157) R270
+U$2      PROTO-5X8           PROTO-5X08       prototyping_holes (0.7 1.14)            R270
+U$3      PROTO-5X8           PROTO-5X08       prototyping_holes (0.7 0.44)            R270
+U$4      PROTO-4X5           PROTO-4X05       prototyping_holes (2.55 0.79)           R270
+U$5      PROTO-4X5           PROTO-4X05       prototyping_holes (1.85 0.79)           R270
