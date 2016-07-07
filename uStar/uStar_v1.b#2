@@ -115,8 +115,6 @@
 <wire x1="85" y1="0" x2="85" y2="40" width="0" layer="20"/>
 <wire x1="85" y1="40" x2="0" y2="40" width="0" layer="20"/>
 <wire x1="0" y1="40" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="40.132" x2="85.09" y2="40.132" x3="42.545" y3="44.196" textsize="1.778" layer="1" unit="inch"/>
-<dimension x1="85.09" y1="40.132" x2="85.09" y2="0" x3="90.17" y3="20.066" textsize="1.778" layer="1" unit="inch"/>
 </plain>
 <libraries>
 <library name="resistor">
